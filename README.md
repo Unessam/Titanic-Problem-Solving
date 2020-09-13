@@ -3,7 +3,7 @@ A competition by Kaggle, the object is using machine learning to create a model 
 this raspitory includes three parts: 1.EDA, 2.Feature Engineering and data munging, 3.model building
 NOTE: this is a classification problem and since the independent variable is not distributed equally, preprocessing consideration regarding imbalanced data such as tuning algorithms or applying SMOTE and similar approaches are required.
 
-#Data Dictionary
+# Data Dictionary
 Variable	Definition	    Key
 survival:	Survival	    ,0 = No, 1 = Yes
 pclass:	  Ticket class	,1 = 1st, 2 = 2nd, 3 = 3rd
@@ -16,7 +16,7 @@ fare:   	Passenger fare
 cabin:  	Cabin number	
 embarked:	Port of Embarkation,C = Cherbourg, Q = Queenstown, S = Southampton
 
-##Variable Notes
+## Variable Notes
 pclass: A proxy for socio-economic status (SES)
 1st = Upper
 2nd = Middle
