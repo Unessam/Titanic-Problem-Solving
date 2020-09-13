@@ -1,6 +1,6 @@
 # Titanic-Problem-Solving
-A competition by Kaggle, the object is using machine learning to create a model that predicts which passengers survived the Titanic shipwreck.You can find the dataset and submission file here: https://www.kaggle.com/c/titanic/data
-this raspitory includes three parts: 1.EDA, 2.Feature Engineering and data munging, 3.model building
+A competition by Kaggle, the object is using machine learning to create a model that predicts which passengers survived the Titanic shipwreck.You can find the dataset and submission file here: https://www.kaggle.com/c/titanic/data \n
+this raspitory includes three parts: 1.EDA, 2.Feature Engineering and data munging, 3.model building \n
 NOTE: this is a classification problem and since the independent variable is not distributed equally, preprocessing consideration regarding imbalanced data such as tuning algorithms or applying SMOTE and similar approaches are required.
 
 # Data Dictionary
