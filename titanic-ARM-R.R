@@ -1,0 +1,22 @@
+require(pacman)
+p_load(pacman, tidyr, dplyr, shiny, ggplot2, ggthemes, GGally, ggvis, httr,
+       lubridate, rmarkdown, stringr)
+p_load(psych)
+p_load(rio)
+titanic <- import("C://Users//ARAD//Desktop//Data science//Salford//handouts//data mining//ASDM//w3//titanic.csv")
+View(titanic)
+dim(titanic)
+names(titanic)
+head(titanic)
+summary(titanic)
+describe(titanic)
+str(titanic)
+p_load(plyr)
+for (i in colnames(titanic)){ titanic[[i]]<- as.factor(titanic[[i]])}
+#install.packages('arules')
+unloadNamespace("arules")
+update.packages("arules")
+library(arules)
+rules <- apriori(titanic, appearance = list(rhs=c('Survived=0')))
+inspect(rules)
+# it seems most of adult men from third class did not survived
