@@ -11,6 +11,12 @@ head(titanic)
 summary(titanic)
 describe(titanic)
 str(titanic)
+one <- colSums(titanic== 1)
+zero<- colSums(titanic==0)
+two<- colSums(titanic==2)
+three<- colSums(titanic==3)
+tot<- rbind(three, two,one, zero)
+barplot(tot, legend.text = T, col=rainbow(4))
 p_load(plyr)
 for (i in colnames(titanic)){ titanic[[i]]<- as.factor(titanic[[i]])}
 #install.packages('arules')
@@ -19,4 +25,4 @@ update.packages("arules")
 library(arules)
 rules <- apriori(titanic, appearance = list(rhs=c('Survived=0')))
 inspect(rules)
-# it seems most of adult men from third class did not survived
+# it seems most of the adult men from third class did not survived
